@@ -1,3 +1,8 @@
+.container {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
 .se-container{
 	display: block;
 	width: 100%;
@@ -38,7 +43,7 @@
 	font-size: 60px;
 	position: relative;
 	display: inline-block;
-	padding: 10px 30px 8px 30px;
+	padding: 0px 30px 8px 30px;
 	height: 80px;
 	background: #259e1f;
 	line-height: 80px;
@@ -51,8 +56,8 @@
 	width: 0;
 	height: 0;
 	border-top: 38px solid transparent;
-	border-bottom: 60px solid transparent;
-	border-right: 60px solid black;
+	border-bottom: 42px solid transparent;
+	border-right: 60px solid #259e1f;
 	position: absolute;
 	left: -59px;
 	top: 0px;
@@ -62,16 +67,16 @@
 	width: 0;
 	height: 0;
 	border-top: 38px solid transparent;
-	border-bottom: 60px solid transparent;
-	border-left: 60px solid black;
+	border-bottom: 42px solid transparent;
+	border-left: 60px solid #259e1f;
 	position: absolute;
 	right: -59px;
 	top: 0px;
 }
 .se-slope:nth-child(odd) .se-content h3:before,
 .se-slope:nth-child(odd) .se-content h3:after{
-	border-right-color: #fff;
-	border-left-color: #fff;
+	border-right-color: #50a812;
+	border-left-color: #50a812;
 }
 .se-content p{
 	width: 75%;
@@ -93,7 +98,7 @@
 	-ms-transform: rotate(-5deg);
 	transform: rotate(-5deg);
 	color: #fff;
-	padding: 130px 100px 250px 100px;
+	padding: 50px 100px 200px 100px;
 }
 .se-slope:nth-child(even) .se-content{
 	-webkit-transform: rotate(5deg);
@@ -102,7 +107,7 @@
 	-ms-transform: rotate(5deg);
 	transform: rotate(5deg);
 	color: #000;
-	padding: 150px 100px 250px 100px;
+	padding: 100px 100px 150px 100px;
 }
 .se-slope:nth-child(odd) .se-content h3{
 	background: #50a812;
