@@ -531,7 +531,7 @@ article,aside,details,figcaption,figure,footer,header,main,nav,section,summary{
     -ms-flex-positive:1;
     padding:0.6rem 0;
     background-size:contain;
-    background-image:url(https://benhurkulzer.github.io/Gigatec-RS/view/img/logo.png);
+    background-image:url(../img/logo.png);
     background-repeat:no-repeat;
     background-origin:content-box
 }
@@ -1238,14 +1238,14 @@ body>.sb-Menu{
 }
 @media only screen and (min-width: 64em) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-width: 64em) and (min--moz-device-pixel-ratio: 1.3), only screen and (min-width: 64em) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-width: 64em) and (min-resolution: 125dpi), only screen and (min-width: 64em) and (min-resolution: 1.3dppx){
     .sb-MMP--fundraisingv1 .sb-MMP-heroImage{
-        background-image:url(https://www.customink.com/assets-inkpress/style_bitz/header/mm_fundraising_2x-f89042ec57ab845467b1e52f6ef5b5ebf98957bb.jpg);
+        background-image:url(../img/Empresa.jpg);
         background-size:cover
     }
 }
 @media (min-width: 81.25em){
     .sb-MMP--fundraisingv1 .sb-MMP-heroImage{
         height:320px;
-        background-image:url(https://www.customink.com/assets-inkpress/style_bitz/header/mm_fundraising_2x-f89042ec57ab845467b1e52f6ef5b5ebf98957bb.jpg);
+        background-image:url(../img/Empresa.jpg);
         background-size:cover
     }
 }
@@ -2743,10 +2743,10 @@ body>.sb-Menu .sb-PageToolbar-item-icon svg{
 .sb-Btn--primaryRed:active,.sb-Btn--primaryRed:focus,.sb-Btn--primaryRed.is-Active,a.sb-Btn--primaryRed:active,a.sb-Btn--primaryRed:focus,a.sb-Btn--primaryRed.is-Active,.sb-Form input[type='submit'].sb-Btn--primaryRed:active,.sb-Form input[type='submit'].sb-Btn--primaryRed:focus,.sb-Form input[type='submit'].sb-Btn--primaryRed.is-Active{
     outline:none;
     color:#fff;
-    background-color:#ff602e !important
+    background-color:#62ce19 !important
 }
 .sb-Btn--primaryRed:hover,a.sb-Btn--primaryRed:hover,.sb-Form input[type='submit'].sb-Btn--primaryRed:hover{
-    background:#e13600
+    background:#448e10;
 }
 .sb-Btn--secondary,a.sb-Btn--secondary,.sb-Form input[type='submit'].sb-Btn--secondary,.sb-Btn--secondaryAlt,a.sb-Btn--secondaryAlt,.sb-Form input[type='submit'].sb-Btn--secondaryAlt{
     -webkit-user-select:none;
