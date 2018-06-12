@@ -4219,7 +4219,7 @@ a.show-more:hover{
 }
 @media (min-width: 43.75em){
     .ThreeBoxes-galleryTest .ThreeBoxesCell-testCell{
-        background:#8bddd4;
+        background: linear-gradient(to right, #7bbf4a, #69ab3a);
         width:100%
     }
     .ThreeBoxes-galleryTest .ThreeBoxesCell-testCell:before{
@@ -4277,8 +4277,8 @@ a.show-more:hover{
     -moz-flex-direction:column;
     flex-direction:column;
     -ms-flex-direction:column;
-    background:linear-gradient(#abe6df, #8bddd4, #8bddd4);
-    height:100%;
+    background:linear-gradient(to right, #7bbf4a, #69ab3a);
+    /*height:100%;*/
     width:90%;
     margin-left:5%
 }
