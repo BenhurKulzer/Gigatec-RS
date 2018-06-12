@@ -166,7 +166,7 @@
     margin-right:0
 }
 .sb-CarouselBasic .flickity-page-dots .dot.is-selected{
-    background-color:#fa3c00
+    background-color:#50a913
 }
 .sb-CarouselProof{
     border-radius:8px;
@@ -230,7 +230,7 @@
     margin-right:0
 }
 .sb-CarouselProof .flickity-page-dots .dot.is-selected{
-    background-color:#fa3c00
+    background-color:#50a913
 }
 .sb-CarouselProof--2up .sb-CarouselProof-cellLeft,.sb-CarouselProof--2up .sb-CarouselProof-cellRight{
     position:relative;
@@ -822,7 +822,7 @@ img.mfp-img{
 .stack-shipping-free h3{
     font-size:16px;
     font-weight:100;
-    color:#fa3c00;
+    color:#50a913;
     font-family:SharpSans, Helvetica, Arial, "Trebuchet MS", sans-serif;
     padding:0;
     margin:0;
@@ -844,7 +844,7 @@ img.mfp-img{
 .stack-shipping-rush h3{
     font-size:16px;
     font-weight:100;
-    color:#fa3c00;
+    color:#50a913;
     font-family:SharpSans, Helvetica, Arial, "Trebuchet MS", sans-serif;
     padding:0;
     margin:0
@@ -866,7 +866,7 @@ img.mfp-img{
 .stack-shipping-super-rush h3{
     font-size:16px;
     font-weight:100;
-    color:#fa3c00;
+    color:#50a913;
     font-family:SharpSans, Helvetica, Arial, "Trebuchet MS", sans-serif;
     padding:0;
     margin:0
@@ -1274,7 +1274,7 @@ img.mfp-img{
 }
 @media (min-width: 43.75em){
     .ThreeBoxesCell-text:before{
-        background:#fa3c00;
+        background:#50a913;
         border:solid white 1px
     }
 }
@@ -1855,7 +1855,7 @@ h2.sc-Brands__Headline{
 }
 .slick-dots li.slick-active button{
     border:2px solid white;
-    background:#fa3c00
+    background:#50a913
 }
 .slick-initialized,.slick-dots{
     background:#ededed
@@ -2000,7 +2000,7 @@ h2.sc-Brands__Headline{
     }
 }
 .ReviewSlider svg g{
-    fill:#fa3c00
+    fill:#50a913
 }
 .ReviewSliderCarousel{
     width:100%;
@@ -2014,7 +2014,7 @@ h2.sc-Brands__Headline{
     margin:0 auto
 }
 .ReviewSliderCarousel .review blockquote{
-    background:#fa3c00;
+    background:#50a913;
     color:white;
     margin:0 2rem;
     position:relative
@@ -2024,7 +2024,7 @@ h2.sc-Brands__Headline{
     position:absolute;
     width:2rem;
     height:2rem;
-    background:#fa3c00;
+    background:#50a913;
     z-index:-1;
     display:block;
     bottom:-1rem;
@@ -2490,7 +2490,7 @@ a.show-more:hover{
     background:url(/assets/site_content/pages/homepage_v2/slider-arrow-left-bd776924b64a1acf5b41abe22515a70abce2dbf0fd21de4bf561863de76ec382.png) no-repeat center bottom
 }
 .stack-review-box{
-    background:#fa3c00;
+    background:#50a913;
     color:white;
     height:150px;
     margin:3px 0 0 0;
@@ -2580,7 +2580,7 @@ a.show-more:hover{
     background:white;
     color:#444444;
     border:solid;
-    border-color:#fa3c00;
+    border-color:#50a913;
     height:auto;
     min-height:160px;
     margin:3px 20px 0 0;
@@ -2754,10 +2754,10 @@ a.show-more:hover{
     background-color:white !important
 }
 .sb-Btn--GhostButton:hover{
-    color:#fa3c00 !important
+    color:#50a913 !important
 }
 .sb-Btn--GhostButton:active,.sb-Btn--GhostButton.is-Active{
-    color:#fa3c00 !important
+    color:#50a913 !important
 }
 .top-push-down{
     width:100%;
@@ -2767,7 +2767,7 @@ a.show-more:hover{
 }
 .top-push-down-background{
     height:4.7rem;
-    background:#fa3c00
+    background:#50a913
 }
 .top-push-down-title{
     font-size:24px;
@@ -2838,7 +2838,7 @@ a.show-more:hover{
 }
 .top-push-down-cta-link:hover{
     background:white;
-    color:#fa3c00
+    color:#50a913
 }
 @media only screen and (min-width: 1024px) and (max-width: 1150px){
     .top-push-down-cta-link{
@@ -3100,7 +3100,7 @@ a.show-more:hover{
     border-radius:5px
 }
 .sg-btn-color-red span,.sg-btn-color-red .sg-btn-text{
-    background:#fa3c00 !important;
+    background:#50a913 !important;
     color:#fff !important;
     border-radius:5px
 }
@@ -3877,7 +3877,7 @@ a.show-more:hover{
 }
 .popup-wgt tr.turntime-row td{
     font-size:0.8em;
-    color:#fa3c00
+    color:#50a913
 }
 .popup-wgt th.getby{
     border-bottom:0
@@ -3900,7 +3900,7 @@ a.show-more:hover{
     margin-bottom:20px;
     font-size:1.5em;
     line-height:1.25em;
-    color:#fa3c00;
+    color:#50a913;
     text-align:center;
     font-weight:normal
 }
@@ -3917,14 +3917,14 @@ a.show-more:hover{
     width:680px
 }
 .super-rush h5{
-    color:#fa3c00;
+    color:#50a913;
     margin-bottom:3px;
     margin-top:5px;
     font-weight:normal
 }
 .cutoff{
     margin:10px 0 0 10px;
-    color:#fa3c00
+    color:#50a913
 }
 .cutoff strong{
     font-weight:bold
@@ -4041,7 +4041,7 @@ a.show-more:hover{
         bottom:0;
         left:50%;
         transform:translateX(-50%);
-        background-color:#fa3c00;
+        background-color:#50a913;
         width:0;
         transition:all 0.15s ease-in
     }
@@ -4582,7 +4582,7 @@ div.lazy{
     background-color:transparent !important
 }
 .sc-MobileHeader{
-    background:#fa3c00;
+    background:#50a913;
     color:white;
     text-align:center;
     padding:.35rem 0;
