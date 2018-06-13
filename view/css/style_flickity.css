@@ -1,4 +1,4 @@
-﻿/*! Flickity v2.0.5 http://flickity.metafizzy.co ---------------------------------------------- */
+/*! Flickity v2.0.5 http://flickity.metafizzy.co ---------------------------------------------- */
 .flickity-enabled{
     position:relative
 }
@@ -1929,9 +1929,9 @@ h2.sc-Brands__Headline{
     height:2rem
 }
 .ReviewSlider-link{
-    display:block;
+    /*display:block;*/
     text-align:center;
-    position:absolute;
+    /*position:absolute;*/
     bottom:2rem;
     left:50%;
     transform:translate(-50%)
@@ -1977,7 +1977,7 @@ h2.sc-Brands__Headline{
 .ReviewSlider-list{
     list-style:none;
     text-align:left;
-    list-style-image:url(/assets/site_content/templates/pla/list-icons/check-3699301ed510e0a8bcbdb97faad253d69c77cf0d018dda7b1863e7c2cc8532e6.gif);
+    list-style-image:url(https://www.customink.com/site_content/templates/pla/list-icons/check-3699301ed510e0a8bcbdb97faad253d69c77cf0d018dda7b1863e7c2cc8532e6.gif);
     margin:1rem 0 0
 }
 @media (min-width: 64em){
@@ -1996,7 +1996,6 @@ h2.sc-Brands__Headline{
         line-height:1.9rem;
         margin-bottom:0;
         font-size:1rem;
-        margin-left:2rem
     }
 }
 .ReviewSlider svg g{
@@ -2061,32 +2060,15 @@ h2.sc-Brands__Headline{
         padding-right:1rem
     }
 }
-.ReviewSliderCarousel .review .reviewer-name{
-    margin-top:1rem
-}
 .ReviewSliderCarousel .review p{
-    font-size:14px;
-    line-height:18px
+    font-size: 12px;
+    line-height: 18px;
 }
 @media (min-width: 64em){
     .ReviewSliderCarousel .review p{
-        font-size:16px;
-        line-height:24px
+        font-size: 12px;
+        line-height: 18px;
     }
-}
-.ReviewSliderCarousel .flickity-prev-next-button{
-    position:absolute;
-    top:7rem;
-    background-repeat:no-repeat !important;
-    border:none;
-    background:transparent;
-    background-image:url(/assets/site_content/icons/slider-arrow-33115888d9d8a6b61a7032dc11b088c949cad7035a7092d71bf64dcdcad742e9.svg)
-}
-.ReviewSliderCarousel .flickity-prev-next-button svg{
-    display:none
-}
-.ReviewSliderCarousel .flickity-prev-next-button.next{
-    right:-1rem
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
     .ReviewSliderCarousel .flickity-prev-next-button.next{
@@ -2094,9 +2076,8 @@ h2.sc-Brands__Headline{
     }
 }
 .ReviewSliderCarousel .flickity-prev-next-button.previous{
-    left:-1rem;
-    transform:rotate(180deg) translateY(24px);
-    display:none
+    transform: rotate(360deg) translateY(-27px);
+    display: none;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
     .ReviewSliderCarousel .flickity-prev-next-button.previous{
@@ -2472,10 +2453,10 @@ a.show-more:hover{
     cursor:pointer;
     position:absolute;
     margin:75px 0 0px 905px;
-    background:url(/assets/site_content/pages/homepage_v2/slider-arrow-right-032534a397adc4f2360c9890701294418968dffd4b6116ef2ac4c1e328434cde.png) no-repeat center top
+    background:url(https://www.customink.com/site_content/pages/homepage_v2/slider-arrow-right-032534a397adc4f2360c9890701294418968dffd4b6116ef2ac4c1e328434cde.png) no-repeat center top
 }
 .stack-reviews-arrow-r:hover{
-    background:url(/assets/site_content/pages/homepage_v2/slider-arrow-right-032534a397adc4f2360c9890701294418968dffd4b6116ef2ac4c1e328434cde.png) no-repeat center bottom
+    background:url(https://www.customink.com/site_content/pages/homepage_v2/slider-arrow-right-032534a397adc4f2360c9890701294418968dffd4b6116ef2ac4c1e328434cde.png) no-repeat center bottom
 }
 .stack-reviews-arrow-l{
     width:28px;
@@ -2484,10 +2465,10 @@ a.show-more:hover{
     cursor:pointer;
     position:absolute;
     margin:75px 0 0px 5px;
-    background:url(/assets/site_content/pages/homepage_v2/slider-arrow-left-bd776924b64a1acf5b41abe22515a70abce2dbf0fd21de4bf561863de76ec382.png) no-repeat center top
+    background:url(https://www.customink.com/site_content/pages/homepage_v2/slider-arrow-left-bd776924b64a1acf5b41abe22515a70abce2dbf0fd21de4bf561863de76ec382.png) no-repeat center top
 }
 .stack-reviews-arrow-l:hover{
-    background:url(/assets/site_content/pages/homepage_v2/slider-arrow-left-bd776924b64a1acf5b41abe22515a70abce2dbf0fd21de4bf561863de76ec382.png) no-repeat center bottom
+    background:url(https://www.customink.com/site_content/pages/homepage_v2/slider-arrow-left-bd776924b64a1acf5b41abe22515a70abce2dbf0fd21de4bf561863de76ec382.png) no-repeat center bottom
 }
 .stack-review-box{
     background:#50a913;
@@ -2513,7 +2494,7 @@ a.show-more:hover{
     display:none
 }
 .customer{
-    background:url(/assets/site_content/pages/homepage_v2/review-arrow-3f99880f74b6e3bcf900a343b1f381776cba67d6274b2cee864597a5f1f45585.png) no-repeat 30px top;
+    background:url(https://www.customink.com/site_content/pages/homepage_v2/review-arrow-3f99880f74b6e3bcf900a343b1f381776cba67d6274b2cee864597a5f1f45585.png) no-repeat 30px top;
     padding:20px 0 0 0;
     font-size:15px;
     position:relative;
@@ -2691,7 +2672,7 @@ a.show-more:hover{
     }
 }
 .sc-homepage-bg2eo-background{
-    background-image:url(/assets/site_content/pages/homepage_v2/promos/bgteo2016-9fa298b39f95536ebe94f5ad5ff4ebac6c4d58f0b7fdce6bcab6e5eeef6c5f8a.jpg)
+    background-image:url(https://www.customink.com/site_content/pages/homepage_v2/promos/bgteo2016-9fa298b39f95536ebe94f5ad5ff4ebac6c4d58f0b7fdce6bcab6e5eeef6c5f8a.jpg)
 }
 .sc-homepage-bg2eo-wrapper{
     position:absolute !important;
@@ -2865,7 +2846,7 @@ a.show-more:hover{
 }
 .top-push-down-dismiss .top-push-down-dismiss-icon{
     display:inline-block;
-    background-image:url(/assets/site_content/icons/svg/close-white-fb4854f79dcef0bc7d12b0e480852cf06075837c38ae184949a1fcaf812773b9.svg);
+    background-image:url(https://www.customink.com/site_content/icons/svg/close-white-fb4854f79dcef0bc7d12b0e480852cf06075837c38ae184949a1fcaf812773b9.svg);
     background-size:contain;
     width:14px;
     height:14px;
@@ -2881,7 +2862,7 @@ a.show-more:hover{
 .PushDown{
     width:100%;
     background-size:cover;
-    background-image:url(/assets/site_content/pages/homepage_v2/background-texture-36cb26edb002eec6df78cdba840a37a329eaa603e7c6c2fb420f8e96fa8fa08f.jpg);
+    background-image:url(https://www.customink.com/site_content/pages/homepage_v2/background-texture-36cb26edb002eec6df78cdba840a37a329eaa603e7c6c2fb420f8e96fa8fa08f.jpg);
     display:flex;
     align-items:center;
     justify-content:center
@@ -2909,7 +2890,7 @@ a.show-more:hover{
     position:absolute;
     right:2rem;
     top:1rem;
-    background-image:url(/assets/site_content/icons/icon-close-fd7bcb4999ee3dca3c6ba5b34d1ccb7d7628ad474fe7ab7e00800f1f367e745b.png);
+    background-image:url(https://www.customink.com/site_content/icons/icon-close-fd7bcb4999ee3dca3c6ba5b34d1ccb7d7628ad474fe7ab7e00800f1f367e745b.png);
     text-indent:-2rem;
     background-repeat:no-repeat;
     background-position:1rem 0.1rem;
@@ -2987,7 +2968,7 @@ a.show-more:hover{
 }
 .holidayPushdown-dismiss-icon{
     display:inline-block;
-    background-image:url(/assets/site_content/icons/svg/close-white-fb4854f79dcef0bc7d12b0e480852cf06075837c38ae184949a1fcaf812773b9.svg);
+    background-image:url(https://www.customink.com/site_content/icons/svg/close-white-fb4854f79dcef0bc7d12b0e480852cf06075837c38ae184949a1fcaf812773b9.svg);
     background-size:contain;
     width:14px;
     height:14px;
@@ -3146,29 +3127,29 @@ a.show-more:hover{
     margin-bottom:0
 }
 .stack-gof-promo li.step-1{
-    background:url(/assets/site_content/shared/stacks/gof-promo/step-1-3c71299cf182a5f413fa963265ac7f3ce1383b26d1107927b6cd388d171b3499.png) no-repeat center top
+    background:url(https://www.customink.com/site_content/shared/stacks/gof-promo/step-1-3c71299cf182a5f413fa963265ac7f3ce1383b26d1107927b6cd388d171b3499.png) no-repeat center top
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.3dppx){
     .stack-gof-promo li.step-1{
-        background:url(/assets/site_content/shared/stacks/gof-promo/step-1@2x-966eff867b5da8f14b5e60a925f811cef77fcfeee3923df7f061b7e17811b41b.png) no-repeat center top;
+        background:url(https://www.customink.com/site_content/shared/stacks/gof-promo/step-1@2x-966eff867b5da8f14b5e60a925f811cef77fcfeee3923df7f061b7e17811b41b.png) no-repeat center top;
         background-size:152px 138px
     }
 }
 .stack-gof-promo li.step-2{
-    background:url(/assets/site_content/shared/stacks/gof-promo/step-2-1b2576e02c88402a86ca2f0a3907094c51f0216f9dd63bbd3d55cbceb0ab89fa.png) no-repeat center top
+    background:url(https://www.customink.com/site_content/shared/stacks/gof-promo/step-2-1b2576e02c88402a86ca2f0a3907094c51f0216f9dd63bbd3d55cbceb0ab89fa.png) no-repeat center top
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.3dppx){
     .stack-gof-promo li.step-2{
-        background:url(/assets/site_content/shared/stacks/gof-promo/step-2@2x-43da2f6ef9f799e60f8f71ff108d65ee4727b1e5c932803c05d0ec90e20cf914.png) no-repeat center top;
+        background:url(https://www.customink.com/site_content/shared/stacks/gof-promo/step-2@2x-43da2f6ef9f799e60f8f71ff108d65ee4727b1e5c932803c05d0ec90e20cf914.png) no-repeat center top;
         background-size:152px 138px
     }
 }
 .stack-gof-promo li.step-3{
-    background:url(/assets/site_content/shared/stacks/gof-promo/step-3-7f660281a6a5084a2d79a0c7d2de93cd37ecd59493456eeafd6acc386667fa12.png) no-repeat center top
+    background:url(https://www.customink.com/site_content/shared/stacks/gof-promo/step-3-7f660281a6a5084a2d79a0c7d2de93cd37ecd59493456eeafd6acc386667fa12.png) no-repeat center top
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 1.3dppx){
     .stack-gof-promo li.step-3{
-        background:url(/assets/site_content/shared/stacks/gof-promo/step-3@2x-b88fc7278bfe0e03be99d2e298e5b0bd850af08839a01e492a40971c622d25c7.png) no-repeat center top;
+        background:url(https://www.customink.com/site_content/shared/stacks/gof-promo/step-3@2x-b88fc7278bfe0e03be99d2e298e5b0bd850af08839a01e492a40971c622d25c7.png) no-repeat center top;
         background-size:152px 138px
     }
 }
@@ -3244,7 +3225,7 @@ a.show-more:hover{
 }
 #local-stores-modal .local-stores-modal-dismiss-area .local-stores-modal-dismiss-icon{
     display:inline-block;
-    background-image:url(/assets/site_content/icons/icon-close-fd7bcb4999ee3dca3c6ba5b34d1ccb7d7628ad474fe7ab7e00800f1f367e745b.png);
+    background-image:url(https://www.customink.com/site_content/icons/icon-close-fd7bcb4999ee3dca3c6ba5b34d1ccb7d7628ad474fe7ab7e00800f1f367e745b.png);
     background-size:contain;
     width:16px;
     height:16px;
@@ -3255,7 +3236,7 @@ a.show-more:hover{
     color:#918378
 }
 #local-stores-modal .local-stores-modal-dismiss-area:hover .top-push-down-dismiss-icon{
-    background-image:url(/assets/site_content/icons/icon-close-hover-b4606d3453b90c583f2ebfed8f69c72e40bfe6b4dda3d4b17ccfda11d4968220.png)
+    background-image:url(https://www.customink.com/site_content/icons/icon-close-hover-b4606d3453b90c583f2ebfed8f69c72e40bfe6b4dda3d4b17ccfda11d4968220.png)
 }
 .mfp-content{
     text-align:center !important;
@@ -3298,7 +3279,7 @@ a.show-more:hover{
     margin:2rem auto 10px;
     width:22px;
     height:24px;
-    background-image:url(/assets/site_content/icons/svg/location-red-70d4c759abeda9c39032ca6b20c8e192a9549cbce8db2b1a12241ab52adf1a99.svg);
+    background-image:url(https://www.customink.com/site_content/icons/svg/location-red-70d4c759abeda9c39032ca6b20c8e192a9549cbce8db2b1a12241ab52adf1a99.svg);
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain
@@ -3313,7 +3294,7 @@ a.show-more:hover{
         position:absolute;
         opacity:1;
         line-height:0;
-        background-image:url(/assets/site_content/icons/svg/close-white2-2beef228a59f14d46ac39c4ed5b1390280d7b14e9078c79d2376ba61fc41564d.svg);
+        background-image:url(https://www.customink.com/site_content/icons/svg/close-white2-2beef228a59f14d46ac39c4ed5b1390280d7b14e9078c79d2376ba61fc41564d.svg);
         background-size:cover;
         background-repeat:no-repeat;
         top:-0.9rem;
@@ -3346,7 +3327,7 @@ a.show-more:hover{
 .PromoModal-holiday{
     max-width:280px;
     height:467px;
-    background-image:url(/assets/site_content/mobile/pages/homepage/promos/july4th2017-0b6d8555754e83eeebb8a6b7cf04bbcabb1001fa909ff54374b01372275a828d.jpg);
+    background-image:url(https://www.customink.com/site_content/mobile/pages/homepage/promos/july4th2017-0b6d8555754e83eeebb8a6b7cf04bbcabb1001fa909ff54374b01372275a828d.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     text-align:center;
@@ -3355,14 +3336,14 @@ a.show-more:hover{
 @media screen and (device-aspect-ratio: 40 / 71){
     .PromoModal-holiday{
         height:367px;
-        background-image:url(/assets/site_content/mobile/pages/homepage/promos/july4th2017sm-8086e11d9a763a4e30707ef32339c13c529b0bab432580248a8ba517d8fb00a3.jpg)
+        background-image:url(https://www.customink.com/site_content/mobile/pages/homepage/promos/july4th2017sm-8086e11d9a763a4e30707ef32339c13c529b0bab432580248a8ba517d8fb00a3.jpg)
     }
 }
 .PromoModal-holiday .mfp-close{
     position:absolute;
     opacity:1;
     line-height:0;
-    background-image:url(/assets/site_content/icons/svg/close-white2-2beef228a59f14d46ac39c4ed5b1390280d7b14e9078c79d2376ba61fc41564d.svg);
+    background-image:url(https://www.customink.com/site_content/icons/svg/close-white2-2beef228a59f14d46ac39c4ed5b1390280d7b14e9078c79d2376ba61fc41564d.svg);
     background-size:cover;
     background-repeat:no-repeat;
     top:-0.9rem;
