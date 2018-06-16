@@ -765,19 +765,10 @@ img.mfp-img{
 }
 @media (min-width: 64em){
     .stack-shipping{
-        padding:45px 50px 45px 355px;
-        padding-left:25%;
-        padding-right:0;
-        background-image:url(../img/selo.png);
-        background-repeat:no-repeat;
-        background-position:0px center;
-        overflow:hidden;
-        background-size:205px auto
     }
 }
 @media (min-width: 81.25em){
     .stack-shipping{
-        background-size:265px auto
     }
 }
 .stack-shipping p{
@@ -850,17 +841,18 @@ img.mfp-img{
     margin:0
 }
 .stack-shipping-super-rush{
-    width:33.33333%;
+    width: 32.33333%;
     float:right;
     margin-right:0;
-    display:block
+    display:block;
+    margin-right: 5px;
 }
 .stack-shipping-super-rush h2{
     font-family:SharpSans, Helvetica, Arial, "Trebuchet MS", sans-serif;
     font-weight:normal;
     font-size:30px;
     line-height:26px;
-    color:#444444;
+    color:#50a913;
     padding-bottom:.25rem
 }
 .stack-shipping-super-rush h3{
@@ -1751,10 +1743,10 @@ h2.sc-Brands__Headline{
     right:-25px
 }
 .slick-prev:before{
-    content:"←"
+    content:"â†"
 }
 [dir="rtl"] .slick-prev:before{
-    content:"→"
+    content:"â†’"
 }
 .slick-next{
     right:-25px
@@ -1764,10 +1756,10 @@ h2.sc-Brands__Headline{
     right:auto
 }
 .slick-next:before{
-    content:"→"
+    content:"â†’"
 }
 [dir="rtl"] .slick-next:before{
-    content:"←"
+    content:"â†"
 }
 .slick-dotted.slick-slider{
     margin-bottom:30px
@@ -1815,7 +1807,7 @@ h2.sc-Brands__Headline{
     position:absolute;
     top:0;
     left:0;
-    content:"•";
+    content:"â€¢";
     width:20px;
     height:20px;
     font-size:6px;
