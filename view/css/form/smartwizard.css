@@ -1,0 +1,968 @@
+	/*   
+  SmartWizard 2.0 plugin 
+  jQuery Wizard control Plugin
+  by Dipu
+  
+  http://www.techlaboratory.net
+  http://tech-laboratory.blogspot.com
+*/
+.swMain {
+	  position:relative;
+	  display:block;
+	  margin:0;
+	  padding:0;
+	  border: none;
+	  overflow:visible;
+	  float:left;
+	  width:100%;
+	 /* max-width:640px; */
+	  max-width: 100%;
+	  /*left:50%;
+	  margin-left:-320px; */
+}
+.swMain .stepContainer {
+	  display:block;
+	  position: relative;
+	  margin: 0;
+	  padding:0;    
+	  border: 0px solid #CCC;    
+	  overflow:hidden;
+	  clear:both;
+	 /* max-height:640px; */
+}
+
+.swMain .stepContainer div.content {
+	  display:block;
+	  position: absolute;  
+	  float:left;
+	  margin: 0;
+	  padding:5px;    
+	  border: none; 
+	  font-family: Source Sans Pro, sans-serif; 
+	  color:#5A5655;   
+	  background-color:#fff;  
+	  text-align:left;
+	  overflow:visible;    
+	  z-index:88; 
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius  : 5px;
+	  width:98%;
+	  clear:both;
+	  height: 95%;
+	  box-shadow: none;
+}
+
+.swMain div.actionBar {
+	  display:block;
+	  position: relative; 
+	  clear:both;
+	  margin:             3px 5px 0 0;   
+	  border:             none;
+	  padding:            0;    
+	  color:              #5A5655;   
+	  background:   none;
+	  height:52px;
+	  text-align:left;
+	  /*overflow:auto;    */
+	  z-index:88; 
+
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius  : 5px;
+	  left:0;
+}
+
+
+.swMain .stepContainer .StepTitle {
+	  display:block;
+	  position: relative;
+	  margin:0;   
+	  border:none;
+	  padding:5px;   
+	  font-family: Source Sans Pro, sans-serif;
+	  font-weight: bold;
+	  color:#474747;   
+	  background:none;
+	  clear:both;
+	  text-align:center; 
+	  z-index:88;
+	  -webkit-border-radius: 0px;
+	  -moz-border-radius  : 0px;    
+}
+
+.swMain ul.anchor {
+	  position: absolute;
+	  display:none;
+	  float:left;
+	  right:10px;
+	  top:5px;
+	  list-style: none;
+	  padding: 0px;  
+	  margin: 10px 0;      
+	  clear: both;
+	  border: 0px solid #CCCCCC;    
+	 
+}
+.swMain ul.anchor li{ 
+	  position: relative; 
+	  display:block;
+	  margin: 0;
+	  padding: 0; 
+	  padding-left:3px;
+	  padding-right: 3px;
+	  border: 0px solid #E0E0E0;      
+	  float: left;
+}
+
+
+.swMain ul.anchor li a {
+	  display:block;
+	  position:relative;
+	  float:left;
+	  margin:0;
+	  padding:0px;
+	  height:13px;
+	  width:13px;
+	  border-radius:100%;
+	  text-decoration: none;
+	  outline-style:none;
+	  -moz-border-radius  : 100%;
+	  -webkit-border-radius: 100%;
+	  z-index:99;
+}
+.swMain ul.anchor li a.selected{
+	  background: #2fb171;
+	  border: 1px solid #d8d8da;
+	  cursor: default;
+	  -moz-box-shadow: none;
+	  -webkit-box-shadow: none;
+	  box-shadow: none;
+}
+.swMain ul.anchor li a.selected:hover {
+	background: #2fb171; 
+}
+.swMain ul.anchor li a.done {
+	  color:none;  
+	  background: #dbdcdd;  
+	  border: 1px solid #79a538; 
+}
+.swMain ul.anchor li a.done:hover {
+	  color:#5A5655;  
+	  background: #79a538; 
+	  border: 1px solid #5A5655;   
+}
+.swMain ul.anchor li a.disabled {
+	  background: none;
+	  border: 1px solid #CCC;  
+	  cursor:text;   
+}
+.swMain ul.anchor li a.disabled:hover { 
+	background: none;     
+}
+.swMain .buttonNext { 
+
+	background-color: #2ab574;
+    color: #fff;
+	float: right;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 10px 22px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    border: 0;
+    outline: none;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: normal;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.swMain .buttonNext:hover {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.swMain .buttonDisabled {
+	  color:#F8F8F8  !important;
+	  background-color: #CCCCCC !important;
+	  border: 1px solid #CCCCCC  !important;
+	  cursor:text;
+	  display: none !important;    
+}
+
+.swMain .buttonPrevious {
+	background-color: #2ab574;
+    color: #fff;
+	float: left;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 10px 22px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    border: 0;
+    outline: none;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: normal;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.swMain .buttonPrevious:hover {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.swMain .buttonFinish {
+	background-color: #2ab574;
+    color: #fff;
+	float: right;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 10px 22px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    border: 0;
+    outline: none;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: normal;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.swMain .buttonFinish:hover {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.flow-1
+{
+	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-1.png) #fff no-repeat center;
+	height: 52px;
+	width: 100%;	
+}
+
+.flow-2
+{
+	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-2.png) #fff no-repeat center;	
+	height: 52px;
+	width: 100%;	
+}
+
+.flow-3
+{
+	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-3.png) #fff no-repeat center;	
+	height: 52px;
+	width: 100%;	
+}
+
+.flow-4
+{
+	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-4.png) #fff no-repeat center;	
+	height: 52px;
+	width: 100%;	
+}
+
+.flow-5
+{
+	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-5.png) #fff no-repeat center;	
+	height: 52px;
+	width: 100%;	
+}
+
+.flow-6
+{
+	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-6.png) #fff no-repeat center;	
+	height: 52px;
+	width: 100%;	
+}
+
+
+/* Form Styles */
+
+.txtBox {
+	  border:1px solid #CCCCCC;
+	  color:#5A5655;
+	  padding:2px;
+	  width:430px;
+}
+.txtBox:focus {
+	  border:1px solid #161515;
+}
+
+.swMain .loader {
+	  position:relative;  
+	  display:none;
+	  float:left;  
+	  margin: 2px 0 0 2px;
+	  padding:8px 10px 8px 40px;
+	  border: 1px solid #FFD700; 
+	  font-family: Source Sans Pro, sans-serif; 
+	  color:#5A5655;       
+	  background: #FFF url(https://bot.rec.br/wp-content/themes/flexform/images/loader.gif) no-repeat 5px;  
+	  -moz-border-radius  : 5px;
+	  -webkit-border-radius: 5px;
+	  z-index:998;
+}
+.swMain .msgBox {
+	  position:relative;  
+	  display:none;
+	  float:left;
+	  margin: 4px 0 0 5px;
+	  padding:5px;
+	  border: 1px solid #e8192c; 
+	  background-color: #e8192c;  
+	  font-family: Source Sans Pro, sans-serif; 
+	  color:#fff;         
+	  -moz-border-radius  : 5px;
+	  -webkit-border-radius: 5px;
+	  z-index:999;
+	  min-width:200px;  
+}
+.swMain .msgBox .content {
+	  font-family: Source Sans Pro, sans-serif; 
+	  padding: 0px;
+	  float:left;
+	  font-weight: bold;
+	  background:none;
+	  color:#fff;
+	  border:none;
+	  text-align:center;
+	  box-shadow:none;
+}
+.swMain .msgBox .close {
+	  border: none;
+	  border-radius: 3px;
+	  color: #fff;
+	  display: block;
+	  float: right;
+	  margin: 0 0 0 5px;
+	  outline-style: none;
+	  padding: 0 2px 0 2px;
+	  position: relative;
+	  text-align: center;
+	  text-decoration: none;
+}
+.swMain .msgBox .close:hover{
+	  color: #fff;
+	  border: none;  
+}
+
+.swMain input[type="text"], .swMain input[type="password"], .swMain input[type="email"], .swMain textarea{ background:#f1f2f2; text-transform: uppercase;}
+
+/**/
+
+.exibir-op-tipo {
+	position:relative; 
+	display:inline-block; 
+	text-align: center;
+}
+
+.exibir-op-tipo .op-tipo-hd {
+	position:relative; 
+	/*float:left; */
+	display:inline-block; 
+}
+
+#wizard h5 {color:#474747;}
+.exibir-opcoes{ 
+	position:relative; 
+	display:inline-block; 
+/*	width:640px; */
+	padding-bottom:20px;
+}
+.exibir-opcoes div {
+	position:relative; 
+	float:left;
+}
+
+.icon-formulario
+{
+    top: 25px;
+    width: 144px;
+    height: 105px;
+    margin: 3px;
+  /*  -webkit-border-radius: 10px; */
+    box-shadow: none;
+    cursor: pointer;
+/*	border:2px solid #fff; */
+	display: inline-block;
+}
+
+/*.icon-formulario:active, .icon-formulario:hover { margin: 3px; border-color:#63861d; box-shadow: none;} */
+
+
+.icon-fabricante
+{
+	position: relative;
+    top: 25px;
+    width: 144px;
+    height: 105px;
+    margin: 5px 5px 5px 5px;
+   /* border: 2px solid rgb(84, 78, 78);
+    -webkit-border-radius: 10px;
+    box-shadow: 3px 5px 3px #888888;
+    cursor: pointer; */
+}
+
+
+.icon-outro
+{
+	position: relative;
+    /*top: 25px; */
+    width: 120px;
+    height: 100px;
+  /*  margin: 10px; 
+	display: inline-block; */
+	vertical-align:bottom;
+   /* border: 2px solid rgb(84, 78, 78);
+    -webkit-border-radius: 10px;
+    box-shadow: 3px 5px 3px #888888;
+    cursor: pointer; */
+}
+
+.icon-capacidade
+{
+    top: 25px;
+    width: 144px;
+    height: 105px;
+    margin: 3px;
+  /*  -webkit-border-radius: 10px; */
+    box-shadow: none;
+    cursor: pointer;
+/*	border:2px solid #fff; */
+}
+
+.icon-capacidade:active h4, .icon-capacidade:hover h4 {color:#fff}	
+*/
+
+#wizard h2{ font-size:21px; line-height:30px; font-weight: bold;}
+.font-s14{ font-size:14px;}
+
+p.formulario-field span{color: #e8192c;  
+  font-family: News Cycle, sans-serif; }
+
+
+.tamstep1{ height:350px;}
+.tamstep2{ height:450px;}
+.tamstep3{ height:450px;}
+.tamstep4{ height:300px;}
+.tamstep5{ height:360px;}
+.tamstep6{ height:350px;}
+
+
+p.formulario-field{ margin:0;}
+
+input[type="radio"], input[type="checkbox"] {
+	margin: 0px;
+}
+
+/**
+***Formulário Wizard
+**/
+
+.icon-formulario.icon-pendrive { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/pendrive.jpg) no-repeat; }
+.icon-formulario.icon-hd-desk { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/hd-desk.jpg) no-repeat;}
+.icon-formulario.icon-hd-note { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/hd-note.jpg) no-repeat;}
+.icon-formulario.icon-hd-externo { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/hd-externo.jpg) no-repeat;}
+.icon-formulario.icon-raid { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/raid.jpg) no-repeat;}
+.icon-formulario.icon-cartao-memoria { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/cartao-de-memoria.jpg) no-repeat;}
+.icon-formulario.icon-ssd{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/SSD.jpg) no-repeat;}
+
+.icon-formulario.icon-pendrive.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/pendrive.jpg) no-repeat; }
+.icon-formulario.icon-hd-desk.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/hd-desk.jpg) no-repeat;}
+.icon-formulario.icon-hd-note.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/hd-note.jpg) no-repeat;}
+.icon-formulario.icon-hd-externo.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/hd-externo.jpg) no-repeat;}
+.icon-formulario.icon-raid.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/raid.jpg) no-repeat;}
+.icon-formulario.icon-cartao-memoria.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/cartao-de-memoria.jpg) no-repeat;}
+.icon-formulario.icon-ssd.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/SSD.jpg) no-repeat;}
+
+
+
+.icon-fabricante.fabricante-adata { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Adata.jpg) #fff no-repeat center;}	
+.icon-fabricante.fabricante-fujitsu { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Fujitsu.jpg) #fff no-repeat center;}	
+.icon-fabricante.fabricante-hitachi { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Hitachi.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-iomega { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/iomega.jpg) #fff no-repeat center;}	
+.icon-fabricante.fabricante-kingston { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Kingston.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-lacie { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Lacie.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-maxtor { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Maxtor.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-multilaser { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Multilaser.jpg) #fff no-repeat center;}	
+.icon-fabricante.fabricante-samsung { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Samsung.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-sandisk { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/SanDisk.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-seagate { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Seagate.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-sony { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Sony.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-toshiba { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Toshiba.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-wd { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/WesternDigital.jpg) #fff no-repeat center;}
+
+.icon-fabricante.fabricante-adata.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Adata.jpg) #fff no-repeat center;}	
+.icon-fabricante.fabricante-fujitsu.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Fujitsu.jpg) #fff no-repeat center;}	
+.icon-fabricante.fabricante-hitachi.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Hitachi.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-iomega.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/iomega.jpg) #fff no-repeat center;}	
+.icon-fabricante.fabricante-kingston.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Kingston.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-lacie.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Lacie.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-maxtor.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Maxtor.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-multilaser.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Multilaser.jpg) #fff no-repeat center;}	
+.icon-fabricante.fabricante-samsung.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Samsung.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-sandisk.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/SanDisk.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-seagate.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Seagate.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-sony.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Sony.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-toshiba.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Toshiba.jpg) #fff no-repeat center;}
+.icon-fabricante.fabricante-wd.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/WesternDigital.jpg) #fff no-repeat center;}
+
+.icon-capacidade.capacidade-80GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/80GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-160GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/160GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-250GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/250GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-320GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/320GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-500GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/500GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-640GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/640GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-750GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/750GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-1TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/1TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-2TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/2TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-3TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/3TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-4TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/4TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-5TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/5TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-6TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/6TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-8TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/8TB.jpg) no-repeat; }
+
+.icon-capacidade.capacidade-80GB.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/80GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-160GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/160GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-250GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/250GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-320GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/320GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-500GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/500GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-640GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/640GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-750GB.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/750GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-1TB.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/1TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-2TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/2TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-3TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/3TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-4TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/4TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-5TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/5TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-6TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/6TB.jpg) no-repeat; }
+.icon-capacidade.capacidade-8TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/8TB.jpg) no-repeat; }
+
+
+.icon-capacidade.capacidade-128MB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/128MB.jpg) no-repeat; }
+.icon-capacidade.capacidade-256MB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/256MB.jpg) no-repeat; }
+.icon-capacidade.capacidade-512MB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/512MB.jpg) no-repeat; }
+.icon-capacidade.capacidade-1GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/1GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-2GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/2GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-4GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/4GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-8GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/8GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-16GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/16GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-32GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/32GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-64GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/64GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-128GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/128GB.jpg) no-repeat; }
+
+.icon-capacidade.capacidade-128MB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/128MB.jpg) no-repeat; }
+.icon-capacidade.capacidade-256MB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/256MB.jpg) no-repeat; }
+.icon-capacidade.capacidade-512MB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/512MB.jpg) no-repeat; }
+.icon-capacidade.capacidade-1GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/1GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-2GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/2GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-4GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/4GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-8GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/8GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-16GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/16GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-32GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/32GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-64GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/64GB.jpg) no-repeat; }
+.icon-capacidade.capacidade-128GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/128GB.jpg) no-repeat; }
+
+
+.col-xs-12 {
+  width: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.col-xs-9 {
+  width: 75%;
+  display: inline-block;
+   vertical-align: bottom;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.col-xs-6 {
+  width: 49%;
+  display: inline-block;
+  vertical-align: bottom;  
+}
+.col-xs-5 {
+  width: 41.66666667%;
+  display: inline-block;
+  vertical-align: bottom;  
+}
+.col-xs-4 {
+  width: 33.33333333%;
+  display: inline-block;
+  vertical-align: bottom;  
+}
+.col-xs-3 {
+  width: 25%;
+  display: inline-block;
+  vertical-align: bottom;  
+}
+.col-xs-2 {
+  width: 16.66666667%;
+  display: inline-block;
+  vertical-align: bottom;  
+}
+.col-xs-1 {
+  width: 8.33333333%;
+  display: inline-block;
+  vertical-align: bottom;  
+}
+
+
+
+
+
+
+/* Responsivo */
+@media only screen and (max-width: 320px) { 
+	/*.swMain { width:280px; left:50%; margin-left:-140px;}
+	.swMain .stepContainer {  height:620px;}*/
+	.swMain .stepContainer .StepTitle { top:20px;}
+	.swMain div.actionBar {  height:80px;}
+	.swMain ul.anchor {
+		display: block;
+	}
+	.exibir-op-tipo { margin-top:20px !important;}
+	.exibir-opcoes{  width:100%;}
+	
+	.icon-fabricante {  width: 45%; height: 80px; margin: 2px; }
+	.icon-capacidade {  width: 45%; margin: 2px; }
+	
+	#divCapacidade{ width:80px !important; }
+
+	/*.swMain .buttonNext { width:80px;}
+	.swMain .buttonPrevious { width:80px;}
+	.swMain .buttonFinish {  width:80px;} */
+
+	#divOutroDispositivo{ margin-top:-25px;}
+
+	.form-recup{ left:-20px;}
+
+	.tamstep1{ height:1360px;} /*Ok Validado */
+	.tamstep2{ height:780px;} /*Ok Validado */
+	.tamstep3{ height:1000px;}
+	.tamstep4{ height:480px;} /*Ok Validado */
+	.tamstep5{ height:630px;} /*Ok Validado */
+	.tamstep6{ height:650px;} /*Ok Validado */
+	
+	.col-xs-6 {
+		width: 100%;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-top: 25px;
+	}
+	
+	.col-xs-4 {
+		width: 73%;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-top: 25px;
+		margin-right: 1%
+	}			
+
+	.col-xs-3 {
+		width: 100%;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-top: 25px;
+	}				
+	
+	.col-xs-2 {
+		width: 24%;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-top: 25px;
+	}				
+				
+	.flow-1 { display: none; }		
+	.flow-2 { display: none; }		
+	.flow-3 { display: none; }		
+	.flow-4 { display: none; }		
+	.flow-5 { display: none; }		
+	.flow-6 { display: none; }		
+		
+	
+}
+
+@media only screen and (max-width: 481px) and (min-width: 321px) { 
+	/*.swMain { width:280px; left:50%; margin-left:-140px;}
+	.swMain .stepContainer {  height:620px;}*/
+	.swMain .stepContainer .StepTitle { top:20px;}
+	.swMain div.actionBar {  height:80px;}
+	.swMain ul.anchor {
+		display: block;
+	}
+	.exibir-op-tipo { margin-top:20px !important;}
+	.exibir-opcoes{  width:100%;}
+	
+	.icon-fabricante {  width: 45%; height: 80px; margin: 2px; }
+	.icon-capacidade {  width: 45%; margin: 2px; }
+	
+	#divCapacidade{ width:80px !important; }
+
+	/*.swMain .buttonNext { width:80px;}
+	.swMain .buttonPrevious { width:80px;}
+	.swMain .buttonFinish {  width:80px;} */
+
+	#divOutroDispositivo{ margin-top:-25px;}
+
+	.form-recup{ left:-20px;}
+
+	.tamstep1{ height:880px;} /*Ok Validado */
+	.tamstep2{ height:800px;} /*Ok Validado */
+	.tamstep3{ height:1024px;}
+	.tamstep4{ height:480px;} /*Ok Validado */
+	.tamstep5{ height:630px;} /*Ok Validado */
+	.tamstep6{ height:700px;} /*Ok Validado */
+	
+	.col-xs-6 {
+		width: 100%;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-top: 25px;
+	}
+	
+	.col-xs-4 {
+		width: 73%;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-top: 25px;
+		margin-right: 1%
+	}			
+
+	.col-xs-3 {
+		width: 100%;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-top: 25px;
+	}				
+	
+	.col-xs-2 {
+		width: 24%;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-top: 25px;
+	}				
+				
+	.flow-1 { display: none; }		
+	.flow-2 { display: none; }		
+	.flow-3 { display: none; }		
+	.flow-4 { display: none; }		
+	.flow-5 { display: none; }		
+	.flow-6 { display: none; }		
+		
+	
+}
+
+@media only screen and (min-width: 482px) and (max-width: 767px) { 
+		.swMain { width:400px; left:50%; margin-left:-200px;}
+		/*.swMain .stepContainer {  height:680px;}*/
+		
+		.exibir-opcoes{  width:100%;}
+		.exibir-op-tipo {margin-top:20px !important;}
+
+		.icon-fabricante {  width: 45%; height: 80px; margin: 2px; }
+		.icon-capacidade {  width: 45%; margin: 2px; }
+
+		#divCapacidade{ width:120px !important;}
+		.swMain div.actionBar {  height:80px;}
+
+		.form-recup{ left:-20px;}
+
+		.tamstep1{ height:880px;} /*Ok Validado */
+		.tamstep2{ height:800px;} /*Ok Validado */
+		.tamstep3{ height:1024px;}
+		.tamstep4{ height:480px;} /*Ok Validado */
+		.tamstep5{ height:630px;} /*Ok Validado */
+		.tamstep6{ height:700px;} /*Ok Validado */
+		
+		.col-xs-6 {
+			width: 100%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}
+	
+		.col-xs-4 {
+			width: 75%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}				
+		
+		.col-xs-3 {
+			width: 100%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}				
+		.col-xs-2 {
+			width: 24%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}	
+			
+		.swMain ul.anchor {
+			display: block;
+		}
+		
+		.flow-1 { display: none; }		
+		.flow-2 { display: none; }		
+		.flow-3 { display: none; }		
+		.flow-4 { display: none; }		
+		.flow-5 { display: none; }		
+		.flow-6 { display: none; }		
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+			
+		#divCapacidade{ width:120px !important;}
+		.swMain div.actionBar {  height:80px;}
+
+		.form-recup{ left:-20px; position:relative;}
+
+		.tamstep1{ height:510px;}
+		.tamstep2{ height:700px;}
+		.tamstep3{ height:640px;}
+		.tamstep4{ height:460px;}
+		.tamstep5{ height:640px;}
+		.tamstep6{ height:600px;}
+		
+		.col-xs-6 {
+			width: 100%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}
+	
+		.col-xs-4 {
+			width: 75%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}				
+		
+		.col-xs-3 {
+			width: 24%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}				
+		
+		.col-xs-2 {
+			width: 24%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}	
+		
+		.swMain ul.anchor {
+			display: block;
+		}
+		
+		.flow-1 { display: none; }		
+		.flow-2 { display: none; }		
+		.flow-3 { display: none; }		
+		.flow-4 { display: none; }		
+		.flow-5 { display: none; }		
+		.flow-6 { display: none; }		
+}
+
+
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+		
+		.exibir-op-tipo {width:100%;}
+				
+		#divCapacidade{ width:120px !important;}
+		.swMain div.actionBar {  height:80px;}
+
+		.form-recup{ left:-20px; position:relative;}
+
+		.tamstep1{ height:510px;}
+		.tamstep2{ height:550px;}
+		.tamstep3{ height:550px;}
+		.tamstep4{ height:450px;}
+		.tamstep5{ height:600px;}
+		.tamstep6{ height:580px;}
+		
+		.col-xs-6 {
+			width: 100%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}
+	
+		.col-xs-4 {
+			width: 75%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}				
+		
+		.col-xs-3 {
+			width: 24%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}	
+		
+		.col-xs-2 {
+			width: 24%;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-top: 25px;
+		}	
+		
+		.swMain ul.anchor {
+			display: block;
+		}
+		
+		.flow-1 { display: none; }		
+		.flow-2 { display: none; }		
+		.flow-3 { display: none; }		
+		.flow-4 { display: none; }		
+		.flow-5 { display: none; }		
+		.flow-6 { display: none; }		
+}
