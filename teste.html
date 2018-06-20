@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, user-scalable=no">
 <link rel='stylesheet' id='wizard-css-css'href='view/css/form/smartwizard.css'>
 <link rel='stylesheet' id='responsive-css-css' href='https://bot.rec.br/wp-content/themes/flexform/css/responsive.css'>
 
@@ -44,18 +45,38 @@
 		</ul> 
 
 		<div id="step-1" style="text-align: center;">
-			<h1 class="StepTitle">Olá, Primeiramente escolha o tipo de Impressão</h1>
+			<h1 class="StepTitle">Olá, Primeiramente escolha o Modelo de sua preferencia</h1>
 			<p>&nbsp;</p>
 			<div class="exibir-op-tipo">
 
 				<div class="op-tipo-hd">
-					<h5>Sublimação</h5>
-					<div id="dispositivo-1" value="HD DESKTOP" class="icon-formulario icon-hd-desk" onclick="clickDispositivo(this);"></div>
+					<h5>Camisa</h5>
+					<div id="dispositivo-1" value="HD DESKTOP" class="icon-formulario icon-polo" onclick="clickDispositivo(this);"></div>
 				</div>
 
 				<div class="op-tipo-hd">
-					<h5>Serigráfia</h5>
-					<div id="dispositivo-2" value="HD NOTEBOOK" class="icon-formulario icon-hd-note" onclick="clickDispositivo(this);"></div>
+					<h5>Camiseta</h5>
+					<div id="dispositivo-2" value="HD DESKTOP" class="icon-formulario icon-polo" onclick="clickDispositivo(this);"></div>
+				</div>
+
+				<div class="op-tipo-hd">
+					<h5>Moletom</h5>
+					<div id="dispositivo-3" value="HD DESKTOP" class="icon-formulario icon-polo" onclick="clickDispositivo(this);"></div>
+				</div>
+
+				<div class="op-tipo-hd">
+					<h5>Canguru</h5>
+					<div id="dispositivo-4" value="HD DESKTOP" class="icon-formulario icon-polo" onclick="clickDispositivo(this);"></div>
+				</div>
+
+				<div class="op-tipo-hd">
+					<h5>Abrigo</h5>
+					<div id="dispositivo-5" value="HD DESKTOP" class="icon-formulario icon-polo" onclick="clickDispositivo(this);"></div>
+				</div>
+
+				<div class="op-tipo-hd">
+					<h5>Polo</h5>
+					<div id="dispositivo-6" value="HD DESKTOP" class="icon-formulario icon-polo" onclick="clickDispositivo(this);"></div>
 				</div>
 
 			</div>
@@ -65,57 +86,37 @@
 
 
 		<div id="step-2" style="text-align: center;">
-			<h1 class="StepTitle">Escolha o Tecido</h1>
+			<h1 class="StepTitle">Perfeito, Agora escolha o tipo de Impressão</h1>
 			<p>&nbsp;</p>
-			<div class="exibir-opcoes" style="text-align: center;">
-				<div id="fabricante-1" value="ADATA" class="icon-fabricante fabricante-adata" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-2" value="FUJITSU" class="icon-fabricante fabricante-fujitsu" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-3" value="HITACHI" class="icon-fabricante fabricante-hitachi" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-4" value="IOMEGA" class="icon-fabricante fabricante-iomega" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-5" value="KINGSTON" class="icon-fabricante fabricante-kingston" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-6" value="LACIE" class="icon-fabricante fabricante-lacie" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-7" value="MAXTOR" class="icon-fabricante fabricante-maxtor" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-8" value="MULTLASER" class="icon-fabricante fabricante-multilaser" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-9" value="SAMSUNG" class="icon-fabricante fabricante-samsung" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-10" value="SANDISK" class="icon-fabricante fabricante-sandisk" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-11" value="SEAGATE" class="icon-fabricante fabricante-seagate" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-12" value="SONY" class="icon-fabricante fabricante-sony" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-13" value="TOSHIBA" class="icon-fabricante fabricante-toshiba" onclick="clickFabricante(this);"></div>
-				<div id="fabricante-14" value="WESTERN DIGITAL" class="icon-fabricante fabricante-wd" onclick="clickFabricante(this);"></div>
-			</div>
+			<div class="exibir-op-tipo">
 
-			<div id="divFabricante" class="icon-outro">
-				<h5>OUTRO FABRICANTE? QUAL?</h5>
-				<input type="text" id="outroFabricante" maxlength="20" style="width:92%;"/>
+				<div class="op-tipo-hd">
+					<h5>Sublimação</h5>
+					<div id="dispositivo-1" value="HD DESKTOP" class="icon-formulario icon-polo" onclick="clickFabricante(this);"></div>
+				</div>
+
+				<div class="op-tipo-hd">
+					<h5>Serigráfia</h5>
+					<div id="dispositivo-2" value="HD NOTEBOOK" class="icon-formulario icon-polo" onclick="clickFabricante(this);"></div>
+				</div>
+
 			</div>
 
 			<input type="hidden" name="fabricante" id="fabricante"/>
 		</div>
 
 		<div id="step-3" style="text-align: center;">
-			<h1 class="StepTitle">Qual a capacidade do dispositivo?</h1>
+			<h1 class="StepTitle">Ótimo, Qual o Tecido de sua preferencia?</h1>
 			<p>&nbsp;</p>
 			<div>
 				<div id="capacidadeHD" style="display:inline;">
 					<div class="exibir-opcoes">
-						<div id="capacidade-1" class="icon-capacidade capacidade-80GB" value="80GB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-2" class="icon-capacidade capacidade-160GB" value="160GB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-3" class="icon-capacidade capacidade-250GB" value="250GB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-4" class="icon-capacidade capacidade-320GB" value="320GB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-5" class="icon-capacidade capacidade-500GB" value="500GB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-6" class="icon-capacidade capacidade-640GB" value="640GB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-7" class="icon-capacidade capacidade-750GB" value="750GB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-8" class="icon-capacidade capacidade-1TB" value="1TB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-9" class="icon-capacidade capacidade-2TB" value="2TB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-10" class="icon-capacidade capacidade-3TB" value="3TB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-11" class="icon-capacidade capacidade-4TB" value="4TB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-12" class="icon-capacidade capacidade-5TB" value="5TB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-13" class="icon-capacidade capacidade-6TB" value="6TB" onclick="clickCapacidade(this);"></div>
-						<div id="capacidade-14" class="icon-capacidade capacidade-8TB" value="8TB" onclick="clickCapacidade(this);"></div>
-					</div>
-					<div id="divCapacidade" class="icon-outro" >
-						<h5>OUTRO:</h5>
-						<input type="text" name="outroCapacidadeHD" id="outroCapacidadeHD" maxlength="8" style="width:90%;"/>
+						<div id="capacidade-1" class="icon-capacidade icon-algodao" value="80GB" onclick="clickCapacidade(this);"></div>
+						<div id="capacidade-2" class="icon-capacidade icon-algodao" value="160GB" onclick="clickCapacidade(this);"></div>
+						<div id="capacidade-3" class="icon-capacidade icon-algodao" value="250GB" onclick="clickCapacidade(this);"></div>
+						<div id="capacidade-4" class="icon-capacidade icon-algodao" value="320GB" onclick="clickCapacidade(this);"></div>
+						<div id="capacidade-5" class="icon-capacidade icon-algodao" value="500GB" onclick="clickCapacidade(this);"></div>
+						<div id="capacidade-6" class="icon-capacidade icon-algodao" value="640GB" onclick="clickCapacidade(this);"></div>
 					</div>
 				</div>
 
@@ -132,11 +133,6 @@
 						<div id="capacidade-23" class="icon-capacidade capacidade-32GB" value="32GB" onclick="clickCapacidade(this);"></div>
 						<div id="capacidade-24" class="icon-capacidade capacidade-64GB" value="64GB" onclick="clickCapacidade(this);"></div>
 						<div id="capacidade-25" class="icon-capacidade capacidade-128GB" value="128GB" onclick="clickCapacidade(this);"></div>
-					</div>
-					
-					<div id="divCapacidade" class="icon-outro" >
-						<h5>OUTRO:</h5>
-						<input type="text" name="outroCapacidadeCard" id="outroCapacidadeCard" maxlength="8" style="width:90%;"/>
 					</div>
 				</div>
 
@@ -159,47 +155,30 @@
 
 
 		<div id="step-4" style="text-align: center;"> 
-			<h1 class="StepTitle">Dados do dispositivo</h1>
+			<h1 class="StepTitle">Qual a cor desejada?</h1>
 			<p>&nbsp;</p>
-			<div class="col-xs-6">
-				<p class="formulario-field">QUAL O MODELO OU O NÚMERO DE SÉRIE?<br>
-				<input type="text" id="numero_serie" name="numero_serie" maxlength="255" style="width:95%; margin-top:10px;" value=""></p>
-				<p class="formulario-field">O QUE ACONTECEU PARA OCORRER A PERDA DE DADOS?<br>
-				<input id="motivo_perda_dados" type="text" maxlength="255" style="width:95%; margin-top:10px;" name="defeito" value=""></p>
-			</div>
-
-			<div class="col-xs-6">
-				<p class="formulario-field">TENTAREMOS SEMPRE RECUPERAR O MÁXIMO DE DADOS POSSÍVEL, MAS TERIA ALGUMA PRIORIDADE?
-					<textarea id="prioridade_arquivos" placeholder="Ex.:Fotos, Meus Documentos, pasta Trabalho, PDF, JPG, etc." maxlength="255" name="prioridade" style="width:100%; margin-top:10px;" cols="10" rows="5"></textarea>
-				</p>
+			<div>
+				<div id="cores" style="display:inline;">
+					<div class="exibir-opcoes">
+						<div id="cores-1" class="icon-capacidade icon-cor-cinza" value="80GB" onclick="clickCapacidade(this);"></div>
+						<div id="cores-2" class="icon-capacidade icon-cor-rosa" value="160GB" onclick="clickCapacidade(this);"></div>
+						<div id="cores-3" class="icon-capacidade icon-cor-vermelho" value="250GB" onclick="clickCapacidade(this);"></div>
+						<div id="cores-4" class="icon-capacidade icon-cor-azul" value="320GB" onclick="clickCapacidade(this);"></div>
+						<div id="cores-5" class="icon-capacidade icon-cor-preto" value="500GB" onclick="clickCapacidade(this);"></div>
+						<div id="cores-6" class="icon-capacidade icon-cor-branco" value="640GB" onclick="clickCapacidade(this);"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div id="step-5" style="text-align: center;">
-			<h1 class="StepTitle">Dados do dispositivo</h1>
+			<h1 class="StepTitle">Informações Complementares</h1>
 			<p>&nbsp;</p>
 			<div class="col-xs-6">
-				<p class="formulario-field">OBSERVAÇÃO ADICIONAL:<br>
+				<p class="formulario-field">Observações Adicionais:<br>
 				<textarea name="observacao" maxlength="255" style="width:95%;" cols="10" rows="10"></textarea></p>
 			</div>
 
-			<div class="col-xs-6">
-				<div>
-					<p class="formulario-field">O DISPOSITIVO JÁ FOI ABERTO? TEM ALGUM LACRE ROMPIDO?</p> 
-					<label id="label_lacres_rompidos_sim" style="display:inline-block; margin-right: 10%;"><input type="radio" id="lacres_rompidos_sim" name="lacres_rompidos" value="S">SIM</label> 
-					<label id="label_lacres_rompidos_nao" style="display:inline-block;"><input type="radio" id="lacres_rompidos_nao" name="lacres_rompidos" value="N">NÃO</label>
-				</div>
-				<div style="margin-top:30px;">
-					<p class="formulario-field">JÁ HOUVE ALGUMA TENTATIVA DE RECUPERAÇÃO? </p>
-					<label id="label_tentativa_restauracao_sim" style="display:inline-block; margin-right: 10%;"><input type="radio" id="tentativa_restauracao_sim" name="tentativa_restauracao" value="S">SIM</label>
-					<label id="label_tentativa_restauracao_nao" style="display:inline-block;"><input type="radio" id="tentativa_restauracao_nao" name="tentativa_restauracao" value="N">NÃO</label>
-				</div>
-				<div style="margin-top:30px;">
-					<p class="formulario-field">O DISPOSITIVO É CRIPTOGRAFADO? </p>
-					<label id="label_dispositivo_criptografado_sim" style="display:inline-block; margin-right: 10%;"><input type="radio" id="dispositivo_criptografado_sim" name="dispositivo_criptografado" value="S">SIM</label>
-					<label id="label_dispositivo_criptografado_nao" style="display:inline-block;"><input type="radio" id="dispositivo_criptografado_nao" name="dispositivo_criptografado" value="N">NÃO</label>
-				</div>
-			</div>
 		</div>
 
 		<div id="step-6" style="text-align: center;">

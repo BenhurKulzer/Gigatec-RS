@@ -259,42 +259,42 @@
 
 .flow-1
 {
-	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-1.png) #fff no-repeat center;
+	background: url(../../img/Form/barra_01.png) #fff no-repeat center;
 	height: 52px;
 	width: 100%;	
 }
 
 .flow-2
 {
-	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-2.png) #fff no-repeat center;	
+	background: url(../../img/Form/barra_02.png) #fff no-repeat center;
 	height: 52px;
 	width: 100%;	
 }
 
 .flow-3
 {
-	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-3.png) #fff no-repeat center;	
+	background: url(../../img/Form/barra_03.png) #fff no-repeat center;
 	height: 52px;
 	width: 100%;	
 }
 
 .flow-4
 {
-	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-4.png) #fff no-repeat center;	
+	background: url(../../img/Form/barra_04.png) #fff no-repeat center;
 	height: 52px;
 	width: 100%;	
 }
 
 .flow-5
 {
-	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-5.png) #fff no-repeat center;	
+	background: url(../../img/Form/barra_05.png) #fff no-repeat center;
 	height: 52px;
 	width: 100%;	
 }
 
 .flow-6
 {
-	background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fluxo/barra-6.png) #fff no-repeat center;	
+	background: url(../../img/Form/barra_06.png) #fff no-repeat center;
 	height: 52px;
 	width: 100%;	
 }
@@ -374,13 +374,7 @@
 
 /**/
 
-.exibir-op-tipo {
-	position:relative; 
-	display:inline-block; 
-	text-align: center;
-}
-
-.exibir-op-tipo .op-tipo-hd {
+.op-tipo-hd {
 	position:relative; 
 	/*float:left; */
 	display:inline-block; 
@@ -483,109 +477,18 @@ input[type="radio"], input[type="checkbox"] {
 ***Formulário Wizard
 **/
 
-.icon-formulario.icon-pendrive { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/pendrive.jpg) no-repeat; }
-.icon-formulario.icon-hd-desk { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/hd-desk.jpg) no-repeat;}
-.icon-formulario.icon-hd-note { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/hd-note.jpg) no-repeat;}
-.icon-formulario.icon-hd-externo { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/hd-externo.jpg) no-repeat;}
-.icon-formulario.icon-raid { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/raid.jpg) no-repeat;}
-.icon-formulario.icon-cartao-memoria { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/cartao-de-memoria.jpg) no-repeat;}
-.icon-formulario.icon-ssd{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/SSD.jpg) no-repeat;}
+.icon-formulario.icon-polo { background: url(../../img/Form/polo.png) no-repeat; -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+.icon-formulario.icon-polo:hover { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
 
-.icon-formulario.icon-pendrive.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/pendrive.jpg) no-repeat; }
-.icon-formulario.icon-hd-desk.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/hd-desk.jpg) no-repeat;}
-.icon-formulario.icon-hd-note.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/hd-note.jpg) no-repeat;}
-.icon-formulario.icon-hd-externo.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/hd-externo.jpg) no-repeat;}
-.icon-formulario.icon-raid.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/raid.jpg) no-repeat;}
-.icon-formulario.icon-cartao-memoria.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/cartao-de-memoria.jpg) no-repeat;}
-.icon-formulario.icon-ssd.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/dispositivos/selected/SSD.jpg) no-repeat;}
+.icon-capacidade.icon-algodao { background: url(../../img/Form/algodao.png) no-repeat; -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+.icon-capacidade.icon-algodao:hover { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
 
-
-
-.icon-fabricante.fabricante-adata { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Adata.jpg) #fff no-repeat center;}	
-.icon-fabricante.fabricante-fujitsu { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Fujitsu.jpg) #fff no-repeat center;}	
-.icon-fabricante.fabricante-hitachi { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Hitachi.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-iomega { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/iomega.jpg) #fff no-repeat center;}	
-.icon-fabricante.fabricante-kingston { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Kingston.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-lacie { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Lacie.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-maxtor { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Maxtor.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-multilaser { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Multilaser.jpg) #fff no-repeat center;}	
-.icon-fabricante.fabricante-samsung { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Samsung.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-sandisk { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/SanDisk.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-seagate { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Seagate.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-sony { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Sony.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-toshiba { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/Toshiba.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-wd { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/WesternDigital.jpg) #fff no-repeat center;}
-
-.icon-fabricante.fabricante-adata.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Adata.jpg) #fff no-repeat center;}	
-.icon-fabricante.fabricante-fujitsu.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Fujitsu.jpg) #fff no-repeat center;}	
-.icon-fabricante.fabricante-hitachi.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Hitachi.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-iomega.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/iomega.jpg) #fff no-repeat center;}	
-.icon-fabricante.fabricante-kingston.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Kingston.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-lacie.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Lacie.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-maxtor.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Maxtor.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-multilaser.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Multilaser.jpg) #fff no-repeat center;}	
-.icon-fabricante.fabricante-samsung.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Samsung.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-sandisk.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/SanDisk.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-seagate.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Seagate.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-sony.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Sony.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-toshiba.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/Toshiba.jpg) #fff no-repeat center;}
-.icon-fabricante.fabricante-wd.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/fabricantes/selected/WesternDigital.jpg) #fff no-repeat center;}
-
-.icon-capacidade.capacidade-80GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/80GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-160GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/160GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-250GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/250GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-320GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/320GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-500GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/500GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-640GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/640GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-750GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/750GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-1TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/1TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-2TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/2TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-3TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/3TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-4TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/4TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-5TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/5TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-6TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/6TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-8TB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/8TB.jpg) no-repeat; }
-
-.icon-capacidade.capacidade-80GB.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/80GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-160GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/160GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-250GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/250GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-320GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/320GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-500GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/500GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-640GB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/640GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-750GB.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/750GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-1TB.selected{ background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/1TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-2TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/2TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-3TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/3TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-4TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/4TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-5TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/5TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-6TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/6TB.jpg) no-repeat; }
-.icon-capacidade.capacidade-8TB.selected { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/8TB.jpg) no-repeat; }
-
-
-.icon-capacidade.capacidade-128MB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/128MB.jpg) no-repeat; }
-.icon-capacidade.capacidade-256MB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/256MB.jpg) no-repeat; }
-.icon-capacidade.capacidade-512MB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/512MB.jpg) no-repeat; }
-.icon-capacidade.capacidade-1GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/1GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-2GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/2GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-4GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/4GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-8GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/8GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-16GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/16GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-32GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/32GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-64GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/64GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-128GB { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/128GB.jpg) no-repeat; }
-
-.icon-capacidade.capacidade-128MB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/128MB.jpg) no-repeat; }
-.icon-capacidade.capacidade-256MB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/256MB.jpg) no-repeat; }
-.icon-capacidade.capacidade-512MB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/512MB.jpg) no-repeat; }
-.icon-capacidade.capacidade-1GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/1GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-2GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/2GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-4GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/4GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-8GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/8GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-16GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/16GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-32GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/32GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-64GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/64GB.jpg) no-repeat; }
-.icon-capacidade.capacidade-128GB.selected  { background: url(https://bot.rec.br/wp-content/themes/flexform/images/formulario/capacidades/selected/128GB.jpg) no-repeat; }
-
+.icon-capacidade.icon-cor-cinza { background-color: grey; box-shadow: 0px 0px 3px #000;}
+.icon-capacidade.icon-cor-rosa { background-color: pink; box-shadow: 0px 0px 3px #000;}
+.icon-capacidade.icon-cor-vermelho { background-color: red; box-shadow: 0px 0px 3px #000;}
+.icon-capacidade.icon-cor-azul { background-color: blue; box-shadow: 0px 0px 3px #000;}
+.icon-capacidade.icon-cor-preto { background-color: black; box-shadow: 0px 0px 3px #000;}
+.icon-capacidade.icon-cor-branco { background-color: white; box-shadow: 0px 0px 3px #000;}
 
 .col-xs-12 {
   width: 100%;
@@ -662,7 +565,6 @@ input[type="radio"], input[type="checkbox"] {
 	.swMain ul.anchor {
 		display: block;
 	}
-	.exibir-op-tipo { margin-top:20px !important;}
 	.exibir-opcoes{  width:100%;}
 	
 	.icon-fabricante {  width: 45%; height: 80px; margin: 2px; }
@@ -732,7 +634,6 @@ input[type="radio"], input[type="checkbox"] {
 	.swMain ul.anchor {
 		display: block;
 	}
-	.exibir-op-tipo { margin-top:20px !important;}
 	.exibir-opcoes{  width:100%;}
 	
 	.icon-fabricante {  width: 45%; height: 80px; margin: 2px; }
@@ -799,7 +700,6 @@ input[type="radio"], input[type="checkbox"] {
 		/*.swMain .stepContainer {  height:680px;}*/
 		
 		.exibir-opcoes{  width:100%;}
-		.exibir-op-tipo {margin-top:20px !important;}
 
 		.icon-fabricante {  width: 45%; height: 80px; margin: 2px; }
 		.icon-capacidade {  width: 45%; margin: 2px; }
@@ -912,8 +812,6 @@ input[type="radio"], input[type="checkbox"] {
 
 
 @media only screen and (min-width: 960px) and (max-width: 1280px) {
-		
-		.exibir-op-tipo {width:100%;}
 				
 		#divCapacidade{ width:120px !important;}
 		.swMain div.actionBar {  height:80px;}
