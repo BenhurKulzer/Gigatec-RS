@@ -4567,4 +4567,11 @@ div.lazy{
         display:none
     }
 }
- 
+
+.text-center {
+    text-align: center;
+}
+
+form {
+    line-height: 1em;
+}
